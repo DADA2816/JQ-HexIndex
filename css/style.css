@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*{
+	box-sizing: border-box;
+}
+.container{
+	width: 1002px;
+	margin: 0 auto;
+}
+.header{
+	width: 1002px;
+	background-color: #fff;
+	top: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+	z-index: 100;
+}
+.contact{
+	background-color: #f6f6f6;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 100;
+}
+.contact li{
+	margin: 10px;
+}
+.fb-icon span{
+	color: #4460a0;
+}
+.twitter-icon span{
+	color: #00aaec;
+}
+a{
+	text-decoration: none;
+}
+.fb-icon a:hover,.twitter-icon a:hover{
+	font-weight: bold;
+}
+
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+}
+.nav h2 a{
+	display: block;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+	width: 224px;
+	height: 50px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.nav ul{
+	display: flex;
+}
+.nav ul a{
+	display: block;
+	padding: 15px 10px 10px;
+	width: 100px;
+	color: #00cc99;
+	text-align: center;
+}
+
+
+.swiper-container {
+	width: 1002px;
+	height: 500px;
+}
+.banner-text{
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+
+.content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+.course{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1px 1px  rgba(0, 0, 0, .1);
+	width: 300px;
+	padding: 20px;
+	margin: 10px;
+}
+.course-img{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.course h3{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 20px;
+}
+.course p,.course ul{
+	line-height: 1.5;
+	margin-top: 10px;
+}
+.course-content ul{
+	list-style:decimal
+}
+
+
+.table h2{
+	text-align: center;
+	font-size: 25px;
+	padding: 40px;
+}
+.price{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+	text-align: left;
+}
+.price th,.price td{
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	padding: 10px 50px 15px;
+	padding-right: 80px;
+}
+.price th{
+	background-color: #f7f7f7;
+}
+.green{
+	color: #00a67d;
+}
+
+
+.form{
+	background: linear-gradient(#00654c,#009771);
+}
+.form-title{
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.5;
+	padding-top: 40px;
+}
+.form-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 20px;
+}
+.form-textarea textarea{
+	width: 450px;
+	height: 250px;
+	border-radius: 3px;
+}
+.form-input{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+}
+.form-input input{
+	border: #00654c;
+	width: 460px;
+	padding:8px;
+	border-radius: 3px;
+}
+.form-input input[type=submit]{
+	width: 70px;
+	align-self: flex-end;
+	background-color: #00cc99;
+	color: white;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.form-input input[type=submit]:hover{
+	background-color:  white;
+	color: #00cc99;
+	cursor: pointer;
+}
+
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 20px 55px;
+}
+.footer-contact a{
+	color: #e75799;
+	font-weight: bold;
+}
+.footer-contact a:hover{
+	color: #000;
+}
+
+/* 以下為 第二次作業新增部分 */
+.openlist{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+}
+.openlist li{ 
+	display: none;
+	padding-bottom: 10px;
+	background: white;
+}
+.openlist li.active{
+	display: block;
+	color: #00cc99;
+	text-align: center;
+}
+.openlist li a:hover{
+	color: white;
+	background: #00cc99;
+}
+.folder:hover,.folder.active{
+	border-bottom: 5px solid #00cc99;
+}
+
+
+.lb-caption,lb-details{
+	display: none !important;
+}
+.lightboxOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	opacity: 0.9;
+	display: none;
+}
+
+
+.back-to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 50px;
+}
+.back-to-top:hover{
+	cursor: pointer;
+}
